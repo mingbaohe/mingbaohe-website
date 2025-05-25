@@ -1,32 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* 导航栏 */}
-      <nav className="bg-white shadow-lg fixed w-full z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <span className="text-2xl font-bold text-gray-800">铭宝和科技</span>
-              </div>
-            </div>
-            <div className="flex items-center">
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="/" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">首页</Link>
-                  <Link href="/products" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">产品服务</Link>
-                  <Link href="/about" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">关于我们</Link>
-                  <Link href="/contact" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">联系我们</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* 英雄区域 */}
       <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen">
